@@ -6,11 +6,16 @@ using namespace std;
 
 int main() {
     cout << "Hello World" << endl;
-    funcao();
 
-    const ListaCont lista(10);
+    ListaCont lista(5);
 
-    cout << lista.get(0) << endl;
+    lista.insertEnd(1);
+    lista.insertEnd(2);
+    lista.insertEnd(3);
+    lista.insertEnd(4);
+    lista.insertEnd(5);
+
+    lista.print();
 
     return 0;
 }
